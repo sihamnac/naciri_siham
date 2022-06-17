@@ -15,21 +15,22 @@
 
 <!-- navbar-->
 <header class="header">
-    <img class="logo" src="./IMG/logo_loreal.jpeg" alt="logo_lOreal">
+    <img class="logo" src="../IMG/logo_loreal.jpeg" alt="logo_lOreal">
     <ul class="menu">
-        <li><a href="#">Présentation</a></li>
-        <li><a href="#">Newsletter</a></li>
+        <li><a href="/index.html">Présentation</a></li>
+        <li><a href="../html/newsletter.html">Newsletter</a></li>
     </ul>
 </header>
 <body>
 <!--section gamme de produits-->
+<div class="pb">
 <section id="gam">
-    <div id="para">
+    <div >
     <div class="left2">
         <div class="titre2">
             <h1>Make <span>your skin </span>shine</h1>
         </div>
-        <p>
+        <p id="para">
             Pour un soin sur-mesure, adapaté à chaque zone du visage et chaque type de peau, adoptez le multi-masking.
             Cette technique consiste à appliquer différents masques aux propriétés complémentaires selon les besoins
             spécifiques de la peau : 
@@ -48,8 +49,9 @@
             Laissez sécher 5 à 10 minutes et rincez à l'eau tiède ou avec une serviette humide.
             Évitez le contour des yeux et des lèvres.
             <br>
-            <div class="listeresult" >
-            <ul>  <strong>Résultats :</strong>
+            <div   class="listeresult">
+        
+            <ul id = "test"> <strong>Résultats :</strong>
                 <br>
                 <li> Immédiatement : les impuretés sont éliminées, la peau est fraîche, propre et purifiée.</li>
                 <li> Dès 7 jours : la peau est matifiée, plus nette et plus douce.</li>
@@ -58,19 +60,20 @@
         </div>
         </div>    
         </p>
-        <button type="button" onclick="fontfamily()">Ciquez ici</button>        
+        <button type="button" id="police"> Cliquez ici</button>        
         <br>
         
-        <button2 name="taillebackground"> Ensuite cliquez là</button2> 
-
+        <button onclick="test()" id="police2" name="taillebackground"> Ensuite cliquez là</button> 
+        <br>
+        <button id="police3" name="inscription">S'inscrire à la newsletter</button>
     </div>
-
+</div>
 </body>
 
 
 
 <!-- Script JS -->
-<script src="./JS/main.js" ></script>
+<script src="../JS/main.js" ></script>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
